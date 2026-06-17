@@ -1,0 +1,21 @@
+crear carpeta
+> cd Documentos/SiteWeb1
+> git clone https://github.com/jtijero/Cibertec_1-4C.git
+hacer cambios
+> ...
+> git add .
+> git commit -m "(descripción de los que hiciste)"
+> git push origin main
+
+te pedirá vincular GitHub
+> git config --global user.name
+nombre de usuario de tu GitHub >> user
+> git config --global user.email
+correo >> user@gmail.com
+no recuerdo donde te pedia la contraseña(hace tiempo no uso git)
+verificando:
+> git config --global --list
+
+lo ideal seria que tengas tu rama pero como es esto, asi nomas
+> git checkout -b main2
+> git push -u origin main2

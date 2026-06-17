@@ -1,0 +1,30 @@
+> cd Cibertec_1-4C
+> winget install OpenJS.NodeJS.LTS
+> node -v
+> npm -v
+si hay protección de ejecución de scripts
+en Powershell modo Administrador
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+>> O
+> npm -v
+
+> npm install -g @angular/cli
+>> ng new frontend1 --skip-git
+>>> y
+>>> CSS
+>>> y
+>>> Gemini - None (no recuerdo que puse)
+
+> ls
+> cd frontend
+> npm install
+si aparecen vulnerabilidades
+>> npm audit
+>> npm audit fix
+> ng serve -o
+mejor lo hago simplon
+
+git status
+git add .
+	git restore --staged .
+	o su buen git reset .
