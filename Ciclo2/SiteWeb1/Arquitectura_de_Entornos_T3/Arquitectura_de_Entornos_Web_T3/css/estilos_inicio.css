@@ -1,457 +1,130 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
+
+
+/* 1. Header Superior (Estático) */
+#main-header {
+background-color: #ffffff;
+border-bottom: 1px solid #e1e1e1;
+padding: 10px 0;
+width: 100%;
+z-content: 100; /* Asegura que esté arriba */
 }
 
-body {
-    background-color: #f4f4f9;
-    overflow-x: hidden;
+/* Contenedor flex para logo a la izq y nav a la der */
+.header-content {
+     padding-left: 20px;
+     padding-right: 20px;
 }
 
-/* =========================================
-   1. NAVBAR SUPERIOR (GLOBAL Y ESTÁTICO)
-   ========================================= */
-#top-navbar {
-    /*position: fixed;*/
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eaeaea;
+/* Enlaces del Nav Global (Derecha) */
+.top-nav-right-global {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    z-index: 1000;
-}
-
-.top-nav-left {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.top-nav-left .logo {
-    font-size: 18px;
-    font-weight: 600;
-    color: #555;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.top-nav-left .logo span {
-    color: #002b5c;
-    font-weight: 700;
-}
-
-.global-links {
-    display: flex;
-    list-style: none;
     gap: 20px;
 }
 
-.global-links a {
+.top-nav-right-global a {
     text-decoration: none;
-    color: #262626;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.global-links a:hover { text-decoration: underline; }
-
-.top-nav-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.top-nav-right a {
-    text-decoration: none;
-    color: #262626;
-    font-size: 13px;
-}
-
-.top-nav-right a:hover { text-decoration: underline; }
-
-.btn-comenzar {
-    background-color: #0067b8;
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 2px;
-    text-decoration: none !important;
-}
-.btn-comenzar:hover { background-color: #005da6; }
-
-.btn-login {
-    border: 1px solid #000;
-    color: #000 !important;
-    padding: 7px 15px;
-    border-radius: 2px;
-    text-decoration: none !important;
-}
-.btn-login:hover { background-color: #f3f3f3; }
-
-/* =========================================
-   2. HERO CARRUSEL (ESTILO OSCURO TIPO AZURE)
-   ========================================= */
-#hero-carrusel { 
-    /*margin-top: 60px;  Espacio para el navbar superior */
-    height: calc(100vh - 120px); /* Restamos el top-nav y el page-nav */
-    min-height: 600px;
-    position: relative;
-    background-color: #000;
-}
-
-.carrusel-contenedor {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carrusel-slide {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.carrusel-slide.activo {
-    opacity: 1;
-    z-index: 1;
-}
-
-.imagen-fondo-carrusel {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6; /* Oscurecemos la imagen para que resalte el texto */
-}
-
-/* Gradiente para asegurar lectura del texto a la izquierda */
-.overlay-gradiente {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%);
-    z-index: 2;
-}
-
-.caja-informativa {
-    position: absolute;
-    top: 30%;
-    left: 8%;
-    max-width: 650px;
-    z-index: 3;
-    color: white;
-}
-
-.caja-informativa .etiqueta {
-    color: #5bc0de;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    display: block;
-    text-transform: uppercase;
-}
-
-.caja-informativa h3 {
-    font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
-
-.caja-informativa p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 40px;
-    color: #ddd;
-}
-
-.hero-botones {
-    display: flex;
-    gap: 15px;
-}
-
-.hero-btn-primario {
-    background-color: #92c5f9;
-    color: #000;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-.hero-btn-primario:hover { background-color: #b3d6fa; }
-
-.hero-btn-secundario {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 24px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-.hero-btn-secundario:hover { background-color: rgba(255,255,255,0.1); }
-
-.carrusel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    color: white;
-    border: none;
-    font-size: 40px;
-    padding: 15px;
-    cursor: pointer;
-    z-index: 10;
-    opacity: 0.5;
-}
-.prev { left: 20px; }
-.next { right: 20px; }
-.carrusel-btn:hover { opacity: 1; }
-
-/* =========================================
-   3. NAVBAR SECUNDARIO (NAVEGACIÓN EN PÁGINA)
-   ========================================= */
-#page-nav {
-    position: sticky;
-    top: 0px; /* Se pega justo debajo del top-navbar */
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 30px;
-    z-index: 990;
-    background-color: rgba(255, 255, 255, 0.85); /* 85% de opacidad para la transparencia */
-    backdrop-filter: blur(8px);
-    
-}
-
-.page-nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    height: 100%;
-    align-items: center;
-}
-
-.page-nav-links li {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.page-nav-links a {
-    text-decoration: none;
-    color: #444;
-    font-size: 17px;
-    font-weight: 600;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-bottom: 1px;
-    border-bottom: 3px solid transparent;
-    transition: color 0.3s, border-bottom 0.3s;
-}
-
-.page-nav-links a:hover {
-    color: #0067b8;
-    border-bottom: 2px solid #0067b8;
-}
-
-/* =========================================
-   4. SECCIONES GENERALES
-   ========================================= */
-.seccion-transicion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #002b5c;
-    color: white;
-}
-
-.seccion-transicion.clara {
-    background-color: #f4f4f9;
     color: #333;
-}
-
-.seccion-transicion h3 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    max-width: 800px;
-}
-
-.seccion-transicion.clara h3 { color: #002b5c; }
-
-.seccion-transicion p {
-    font-size: 18px;
-    max-width: 800px;
-    line-height: 1.6;
-    color: #d1e0f0;
-}
-
-.seccion-transicion.clara p { color: #555; }
-
-.grid-servicios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 50px;
-    width: 100%;
-    max-width: 1300px;
-}
-
-.servicio-card {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    text-align: left;
-    border-top: 4px solid #002b5c;
-    transition: transform 0.3s;
-}
-
-.servicio-card:hover { transform: translateY(-5px); }
-.servicio-card h4 { color: #002b5c; font-size: 20px; margin-bottom: 15px; }
-.servicio-card ul { list-style: none; }
-.servicio-card ul li {
-    color: #666;
-    margin-bottom: 10px;
+    font-weight: 500;
     font-size: 14px;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-}
-.servicio-card ul li::before { content: "•"; color: #002b5c; font-weight: bold; }
-
-#proyectos-destacados { background-color: #fff; padding: 100px 20px; }
-.bloque-contenido { width: 100%; max-width: 1200px; margin: 0 auto; }
-#proyectos-destacados h2 { text-align: center; margin-bottom: 50px; color: #002b5c; font-size: 32px; }
-
-/* =========================================
-   5. CARRUSEL DE PORTAFOLIO
-   ========================================= */
-.carrusel-pausado-wrapper {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-.carrusel-pausado-track {
-    display: flex;
-    width: 400%;
-    animation: slidePausa 20s infinite;
-}
-.carrusel-pausado-track:hover { animation-play-state: paused; }
-
-@keyframes slidePausa {
-    0%, 20% { transform: translateX(0); }
-    25%, 45% { transform: translateX(-25%); }
-    50%, 70% { transform: translateX(-50%); }
-    75%, 95% { transform: translateX(-75%); }
-    100% { transform: translateX(0); }
+.top-nav-right-global a:hover {
+    color: #0067b8;
 }
 
-.proyecto-slide-grande { width: 25%; height: 600px; position: relative; }
-.proyecto-slide-grande img { width: 100%; height: 100%; object-fit: cover; }
-.proyecto-info-overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(transparent, rgba(0,43,92,0.95));
-    color: white;
-    padding: 40px 30px 30px;
+
+
+
+/* 2. Navbar Sticky (Seccional) */
+#sticky-page-nav {
+background-color: black;
+padding: 2px 0;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+z-index: 99; /* Justo debajo del header principal si coinciden */
+padding-inline-start:6px;
 }
-.proyecto-info-overlay h4 { font-size: 24px; margin-bottom: 8px; }
-.proyecto-info-overlay p { font-size: 15px; color: #e0e0e0; }
 
-/* =========================================
-   6. FORMULARIO DE CONTACTO
-   ========================================= */
-#cta-formulario { background-color: #ffffff; padding: 80px 20px; }
-.cta-tabs { display: flex; justify-content: flex-start; margin-bottom: 30px; border-bottom: 2px solid #ccc; }
-.tab-btn { background: none; border: none; padding: 12px 40px; font-size: 16px; font-weight: bold; cursor: pointer; color: #777; }
-.tab-btn.activo { color: #002b5c; border-bottom: 3px solid #002b5c; }
+/* Usamos la clase nativa de Bootstrap .sticky-top en el HTML,
+ p ero aseguramos que funcione bien */                                 *
+ .sticky-top {
+     top: 0; /* Se pega al tope de la ventana */
+ }
 
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    background: #fdfdfd;
-    padding: 50px;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
-}
-select, input, textarea { width: 100%; padding: 14px; margin-bottom: 25px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
-select:focus, input:focus, textarea:focus { outline: none; border-color: #002b5c; }
-label { display: block; margin-bottom: 8px; font-size: 13px; font-weight: bold; color: #555; }
+ .sticky-nav-links {
+     list-style: none;
+     gap: 60px;
+ }
 
-.btn-enviar {
-    background-color: #002b5c;
-    color: white;
-    border: 2px solid #002b5c;
-    padding: 14px 35px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    float: right;
-    border-radius: 6px;
-    font-size: 15px;
-}
-.btn-enviar:hover { background-color: white; color: #002b5c; }
+ .sticky-nav-links a {
+     text-decoration: none;
+     color: #ffffff; /* Texto blanco sobre fondo negro */
+     font-weight: 450;
+     font-size: 11px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     transition: opacity 0.2s ease;
+ }
 
-/* =========================================
-   7. FOOTER
-   ========================================= */
-footer { height: 25vh; background-color: #f2f2f2; padding: 1% 4%; display: flex; flex-direction: column; justify-content: space-between; border-top: 1px solid #ddd; }
-.footer-superior { display: flex; justify-content: flex-start; align-items: center; gap: 30px; padding-bottom: 1%; border-bottom: 1px solid #ccc; height: 35%; }
-.btn-explorar { background-color: #e5e5e5; color: #000; padding: 6px 15px; border: none; font-weight: 600; font-size: 12px; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 8px; }
-.btn-explorar:hover { background-color: #d4d4d4; }
-.redes-sociales { display: flex; gap: 15px; }
-.icono-red { display: block; width: 20px; height: 20px; }
-.icono-red svg { width: 100%; height: 100%; fill: #000; transition: fill 0.3s; }
-.icono-red:hover svg { fill: #555; }
+ .sticky-nav-links a:hover {
+     opacity: 0.8;
+     color: orange;
+     text-decoration: solid;
+     font-style: italic;
+     font-family: Arial, Helvetica, sans-serif;
+ }
 
-.footer-inferior { display: flex; justify-content: space-between; height: 60%; padding-top: 1%; }
-.footer-columna { flex: 1; }
-.footer-columna h5 { margin-bottom: 5px; color: #333; font-size: 11px; }
-.footer-columna ul { list-style: none; }
-.footer-columna ul li { margin-bottom: 3px; }
-.footer-columna a { text-decoration: none; color: #666; font-size: 10px; }
-.footer-columna a:hover { color: #000; text-decoration: underline; }
+ :target::before {
+     content: "";
+     display: block;
+     height: 60px; /* Altura del navbar sticky + un poco de margen */
+     margin-top: -60px;
+     visibility: hidden;
+     pointer-events: none;
+ }
+                                            *
+  html {
+      scroll-padding-top: 60px; /* Altura del navbar sticky */
+      scroll-behavior: smooth; /* Scroll suave opcional */
+  }
 
-/* =========================================
-   8. MEDIA QUERIES (RESPONSIVE)
-   ========================================= */
-@media (max-width: 900px) {
-    form { grid-template-columns: 1fr; gap: 20px; }
-    footer { height: auto; min-height: 25vh; }
-    .footer-inferior { flex-wrap: wrap; }
-    .footer-columna { min-width: 30%; margin-bottom: 10px; }
-    .proyecto-slide-grande { height: 400px; }
-    .top-nav-right, .global-links { display: none; } /* Ocultar links en móvil para limpieza */
-    .caja-informativa h3 { font-size: 32px; }
-}
+  footer {
+      height: 10vh;
+      background-color: #f2f2f2;
+      padding: 1% 4%; display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 1px solid #ddd; }
+
+  .footer-superior {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; gap: 30px;
+      padding-bottom: 1%;
+      /*border-bottom: 1px solid #ccc;*/
+      height: 35%; }
+
+  .btn-explorar { background-color: #e5e5e5;
+      color: #000; padding: 6px 15px;
+      border: none; font-weight: 600;
+      font-size: 12px; border-radius: 4px;
+      cursor: pointer; display: flex;
+      align-items: center;
+      gap: 8px; }
+
+  .btn-explorar:hover { background-color: #d4d4d4; }
+
+  .redes-sociales { display: flex;
+      gap: 15px; }
+
+  .icono-red { display: block;
+      width: 20px;
+      height: 20px; }
+
+  .icono-red svg { width: 100%;
+      height: 100%;
+      fill: #000;
+      transition: fill 0.3s; }
+
+  .icono-red:hover svg { fill: #555; }
