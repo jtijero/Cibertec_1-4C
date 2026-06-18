@@ -2,10 +2,11 @@
 
 /* 1. Header Superior (Estático) */
 #main-header {
-background-color: #ffffff;
+background-color: #f2f2f2;
 border-bottom: 1px solid #e1e1e1;
 padding: 10px 0;
 width: 100%;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 z-content: 100; /* Asegura que esté arriba */
 }
 
@@ -39,11 +40,11 @@ z-content: 100; /* Asegura que esté arriba */
 
 /* 2. Navbar Sticky (Seccional) */
 #sticky-page-nav {
-background-color: black;
+background-color: rgb(13, 11, 11);
 padding: 2px 0;
 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 z-index: 99; /* Justo debajo del header principal si coinciden */
-padding-inline-start:6px;
+padding-inline-start:10px;
 }
 
 /* Usamos la clase nativa de Bootstrap .sticky-top en el HTML,
