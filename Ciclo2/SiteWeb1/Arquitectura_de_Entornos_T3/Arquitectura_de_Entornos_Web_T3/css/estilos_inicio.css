@@ -5,19 +5,19 @@
 background-color: #f2f2f2;
 border-bottom: 1px solid #e1e1e1;
 padding: 15px 0;
-width: 100%;
+width: 90%;
 box-shadow: 0 10px 18px rgba(0,0,0,0.2);
 z-index: 100; /* Asegura que esté arriba */
 }
 
 /* Contenedor flex para logo a la izq y nav a la der */
 .header-content {
-     padding-left: 20px;
-     padding-right: 20px;
+     padding-left: 25px;
+     padding-right: 25px;
 }
 
 .top-nav-left {
-    font-size: 20px;
+    font-size: 18px;
     margin-left:15px;
     /*font-style: italic;*/
     font-family: Arial, Helvetica, sans-serif;
@@ -26,15 +26,15 @@ z-index: 100; /* Asegura que esté arriba */
 /* Enlaces del Nav Global (Derecha) */
 .top-nav-right-global {
     display: flex;
-    margin-top: 10px;
-    gap: 38px;
+    margin-top: 5px;
+    gap: 36px;
 }
 
 .top-nav-right-global a {
     text-decoration: none;
     color: #120e1f;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     transition: color 2s ease;
 
@@ -66,7 +66,7 @@ z-index: 100; /* Asegura que esté arriba */
 /* 2. Navbar Sticky (Seccional) */
 #sticky-page-nav {
 background-color: rgb(4, 17, 62);
-padding: 2px 0;
+padding: 1px 0;
 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 z-index: 99; /* Justo debajo del header principal si coinciden */
 padding-inline-start:10px;
@@ -75,7 +75,8 @@ padding-inline-start:10px;
 /* Usamos la clase nativa de Bootstrap .sticky-top en el HTML,
  p ero aseguramos que funcione bien */                                 *
  .sticky-top {
-     top: 0; /* Se pega al tope de la ventana */
+     top: 0;
+     right: 0; /* Se pega al tope de la ventana */
  }
 
  .sticky-nav-links {
@@ -154,3 +155,31 @@ padding-inline-start:10px;
       transition: fill 0.3s; }
 
   .icono-red:hover svg { fill: #555; }
+
+
+/*para carruseles*/
+.carousel-custom-bg-green {
+            background-color: #e5f0e6; /* Verde claro similar a la imagen 1 */
+            border-radius: 15px;
+        }
+.carousel-custom-bg-white {
+    background-color: #ffffff; /* Blanco similar a la imagen 2 */
+    border-radius: 15px;
+}
+.btn-red-custom {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+}
+.btn-red-custom:hover {
+    background-color: #cc0000;
+    color: white;
+}
+.subtitle-custom {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 1px;
+    text-transform: uppercase;}
