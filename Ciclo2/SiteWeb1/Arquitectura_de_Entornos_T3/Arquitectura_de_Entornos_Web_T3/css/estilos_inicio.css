@@ -159,11 +159,11 @@ padding-inline-start:10px;
 
 /*para carruseles*/
 .carousel-custom-bg-green {
-            background-color: #e5f0e6; /* Verde claro similar a la imagen 1 */
-            border-radius: 15px;
-        }
-.carousel-custom-bg-white {
-    background-color: #ffffff; /* Blanco similar a la imagen 2 */
+    background-color: #e5f0e6; /* Verde claro similar a la imagen 1 */
+    border-radius: 15px;
+}
+.carousel-custom-bg-blue {
+    background-color: #c1dee6; /* Blanco similar a la imagen 2 */
     border-radius: 15px;
 }
 .btn-red-custom {
@@ -183,3 +183,22 @@ padding-inline-start:10px;
     color: #555;
     letter-spacing: 1px;
     text-transform: uppercase;}
+
+.hero {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
