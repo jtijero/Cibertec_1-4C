@@ -17,7 +17,7 @@
 
                         <div class="top-nav-left">
                             <div class="logo p-1">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="#0067b8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#0067b8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                                  Grupo Tijero <span style="margin-left:4px; font-style: italic;">  |  Soluciones</span >
                             </div>
                         </div>
@@ -114,60 +114,82 @@
                 
                 <!--aqui va un carrusel de imagenes con la diferente informacion   o  
                 diferentes carruseles con diferentes imagenes por servicio brindado-->
-                <section id="hero-carrusel" class="p-3">
-                    <div id="carruselPrincipal" class="carousel slide shadow-sm" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
+                <section class="hero text-center p-1 mt-3 rounded reveal-en-scroll">
 
-                        <div class="carousel-inner">
+                        <section id="proyectos-destacados" class="seccion-transicion p-1">
                             
-                            <div class="carousel-item active carousel-custom-bg-green p-5">
-                                <div class="row align-items-center">
-                                    <div class="col-md-4 text-center">
-                                        <img src="../images/proyectos-destacados5.jpeg" class="img-fluid rounded" alt="Servicios">
+                            <div id="carruselProyectos" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner rounded shadow-sm">
+                                    
+                                    <div class="carousel-item active carousel-custom-bg-white p-4 border">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <div class="subtitle-custom mb-2">ARQUITECTURA</div>
+                                                <h3 class="fw-bold">Diseño de Módulos para Malls</h3>
+                                                <p class="text-secondary">Gestión integral desde el diseño 3D hasta la instalación final en centros comerciales reconocidos.</p>
+                                                <button class="btn btn-outline-danger rounded-pill mt-2">Ver detalles</button>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="../images/proyectos-destacados5.jpeg" class="img-fluid rounded" alt="Diseño de módulos">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-7 ps-md-5">
-                                        <div class="subtitle-custom mb-3">SERVICIOS</div>
-                                        <h8 class="fw-bold display-6 mb-3">Solicita online tu proyecto</h8>
-                                        <br>
-                                        <p class="text-secondary fw-semibold mb-1">Sin cambiar de proveedores.</p>
-                                        <p class="text-secondary fw-semibold mb-4">Flexibilidad de pago.</p>
-                                        <button class="btn btn-red-custom rounded-pill">Quiero mi servicio</button>
+
+                                    <div class="carousel-item carousel-custom-bg-white p-4 border">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="../images/proyectos-destacados4.jpeg" class="img-fluid rounded" alt="Estructuras metálicas">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="subtitle-custom mb-2">INFRAESTRUCTURA</div>
+                                                <h3 class="fw-bold">Estructuras Metálicas Industriales</h3>
+                                                <p class="text-secondary">Instalación de soporte técnico avanzado con cableado a nivel empresarial.</p>
+                                                <button class="btn btn-outline-danger rounded-pill mt-2">Ver detalles</button>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="carousel-item carousel-custom-bg-white p-4 border">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <div class="subtitle-custom mb-2">ARQUITECTURA</div>
+                                                <h3 class="fw-bold">Diseño de Módulos para Malls</h3>
+                                                <p class="text-secondary">Gestión integral desde el diseño 3D hasta la instalación final en centros comerciales reconocidos.</p>
+                                                <button class="btn btn-outline-danger rounded-pill mt-2">Ver detalles</button>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img src="../images/proyectos-destacados1.jpeg" class="img-fluid rounded" alt="Módulos comerciales">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item carousel-custom-bg-white p-4 border">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-4">
+                                                <img src="../images/portafolio1.jpeg" class="img-fluid rounded" alt="Soporte técnico">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="subtitle-custom mb-2">INFRAESTRUCTURA</div>
+                                                <h3 class="fw-bold">Estructuras Metálicas Industriales</h3>
+                                                <p class="text-secondary">Instalación de soporte técnico avanzado con cableado a nivel empresarial.</p>
+                                                <button class="btn btn-outline-danger rounded-pill mt-2">Ver detalles</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+                                
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carruselProyectos" data-bs-slide="prev">
+                                </button>
+                                
+                                <button class="carousel-control-next" type="button" data-bs-target="#carruselProyectos" data-bs-slide="next">
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+
                             </div>
+                        </section>
 
-                            <div class="carousel-item active carousel-custom-bg-blue p-5">
-                                <div class="row align-items-center">
-                                    <div class="col-md-7 ps-md-5">
-                                        <div class="subtitle-custom mb-3">SERVICIOS</div>
-                                        <p class="fw-bold display-6 mb-3 p-2">Solicita online tu proyecto</p>
-                                        <br>
-                                        <p class="text-secondary fw-semibold mb-1">Sin cambiar de proveedores.</p>
-                                        <p class="text-secondary fw-semibold mb-4">Flexibilidad de pago.</p>
-                                        <button class="btn btn-red-custom rounded-pill">Quiero mi servicio</button>
-                                    </div>
-                                    <div class="col-md-4 text-center"> <!--6 text-center mt-4 mt-md-0-->
-                                        <img src="../images/proyectos-destacados5.jpeg" class="img-fluid rounded" alt="Ecológico">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
-                            
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
-                            <!--<span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>-->
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-                </section>    
+                    </section>  
 
                     <section id="metodologia" class="p-3">
                         <h5>Nuestra Metodología: Tu proyecto en las mejores manos</h5>
@@ -404,7 +426,33 @@
             </footer>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Configuramos las opciones del observador
+            const observerOptions = {
+                root: null, // Usa el viewport del navegador
+                rootMargin: '0px',
+                threshold: 0.15 // Se activará cuando el 15% del carrusel sea visible
+            };
 
+            // Creamos el observador
+            const scrollObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    // Si el elemento entra en la pantalla
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Ejecuta la animación CSS
+                        observer.unobserve(entry.target); // Dejamos de observarlo para que no se anime cada vez que subes/bajas
+                    }
+                });
+            }, observerOptions);
+
+            // Seleccionamos todos los elementos con la clase y los ponemos a observar
+            const elementosParaAnimar = document.querySelectorAll('.reveal-en-scroll');
+            elementosParaAnimar.forEach(el => {
+                scrollObserver.observe(el);
+            });
+        });
+    </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>
