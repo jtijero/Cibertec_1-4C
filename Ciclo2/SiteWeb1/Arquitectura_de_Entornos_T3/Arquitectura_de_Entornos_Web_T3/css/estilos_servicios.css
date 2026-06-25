@@ -2,12 +2,13 @@
 
 /* 1. Header Superior (Estático) */
 #main-header {
-background-color: #f2f2f2;
+background-color: #b9bba2;
 border-bottom: 1px solid #e1e1e1;
 padding: 10px 0;
 width: 100%;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-z-content: 100; /* Asegura que esté arriba */
+align-content: 100; /* Asegura que esté arriba */
+font-style: italic;
 }
 
 /* Contenedor flex para logo a la izq y nav a la der */
@@ -129,3 +130,165 @@ padding-inline-start:10px;
       transition: fill 0.3s; }
 
   .icono-red:hover svg { fill: #555; }
+
+
+/* ==========================================================================
+   NUEVA GALERÍA: TABS Y CARRUSEL SPLIT CARDS
+   ========================================================================== */
+
+/* Contenedor de Tabs Superiores */
+.tabs-container {
+    background-color: #f0f0f0 !important;
+    border-color: #e0e0e0 !important;
+}
+
+.tab-btn {
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--primary-color) !important;
+}
+
+/* Ocultar barra de scroll en el carrusel nativo */
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tarjeta Split (Mitad info, Mitad imagen) */
+.tarjeta-split {
+    width: 380px; /* Ancho fijo para mantener uniformidad en el scroll */
+    height: 220px;
+    border-radius: 16px;
+    border-color: #e5e5e5 !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden; /* Asegura que la imagen respete el border-radius */
+}
+
+.tarjeta-split:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Etiqueta (Pill) dentro de la tarjeta */
+.tag-pill {
+    display: inline-block;
+    padding: 3px 12px;
+    font-size: 11px;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+/* Paginación Inferior */
+.carousel-pagination button {
+    color: var(--primary-color) !important; /* Flechas verdes */
+}
+
+.carousel-pagination .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* El punto activo en tus imágenes de referencia es ROJO */
+.carousel-pagination .dot.active {
+    background-color: #e60000; 
+    width: 20px; /* Alargado para destacar */
+    border-radius: 4px;
+}
+
+.hero {
+    /* Forzamos la proporción exacta: 2 de ancho x 1 de alto */
+    aspect-ratio: 2 / 1;
+    
+    /* Usamos Flexbox para centrar el texto perfectamente en medio de ese espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Aquí ocurre la magia del desvanecido:
+       Superponemos un degradado casi blanco/verde claro (85% y 90% de opacidad) 
+       encima de la imagen fotográfica. Esto "desvanece" la imagen hacia el fondo.
+    */
+    background-image: linear-gradient(
+        rgba(232, 245, 233, 0.85), /* var(--bg-light-green) en RGBA */
+        rgba(255, 255, 255, 0.90)  /* Blanco al 90% en la parte inferior */
+    ), url('../images/2.png'); /* <-- Coloca aquí tu imagen */
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Bordes y sombras sutiles para enmarcarlo */
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 20px;
+    width: 100%;
+}
+
+/* Opcional: Un pequeño halo blanco alrededor del texto para maximizar la lectura */
+.hero h4 {
+    text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.9);
+}
+
+/* ==========================================================================
+   ANIMACIONES DE SCROLL (Intersection Observer)
+   ========================================================================== */
+
+/* ==========================================================================
+   EFECTO SCROLL REVEAL VERTICAL CONTINUO
+   ========================================================================== */
+
+/* Estado inicial (Oculto y desplazado hacia abajo/pequeño) */
+/* ==========================================================================
+   CSS SCROLL SNAPPING (Salto Automático Vertical)
+   ========================================================================== */
+
+/* Contenedor que maneja el scroll interno */
+.snap-container {
+    height: 80vh; /* Altura del área de presentación */
+    overflow-y: scroll; /* Activa el scroll interno */
+    scroll-snap-type: y mandatory; /* Obliga a dar el salto automático (eje Y) */
+    scroll-behavior: smooth;
+    
+    /* Ocultamos la barra de scroll para que parezca una app nativa */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+.snap-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* Cada sección ocupa el 100% del contenedor y centra su contenido */
+.snap-section {
+    height: 100%; /* Ocupa todo el snap-container */
+    scroll-snap-align: center; /* El salto se ancla en el centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   ANIMACIÓN DE LAS TARJETAS (Corregida para evitar parpadeos)
+   ========================================================================== */
+.reveal-scroll-item {
+    opacity: 0;
+    /* Reducimos el translate a 30px para que el Observer no se confunda al moverse */
+    transform: translateY(30px) scale(0.98); 
+    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-scroll-item.en-pantalla {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
