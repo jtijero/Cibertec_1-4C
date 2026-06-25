@@ -2,18 +2,23 @@
 
 /* 1. Header Superior (Estático) */
 #main-header {
-background-color: #f2f2f2;
+background-color: #b9bba2;
 border-bottom: 1px solid #e1e1e1;
 padding: 10px 0;
 width: 100%;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-z-content: 100; /* Asegura que esté arriba */
+align-content: 100; /* Asegura que esté arriba */
+font-style: italic;
 }
 
+#aside{
+    background-color: #e8e5c5;
+
+}
 /* Contenedor flex para logo a la izq y nav a la der */
 .header-content {
      padding-left: 20px;
-     padding-right: 20px;
+     padding-right: 40px;
 }
 
 /* Enlaces del Nav Global (Derecha) */
@@ -40,7 +45,7 @@ z-content: 100; /* Asegura que esté arriba */
 
 /* 2. Navbar Sticky (Seccional) */
 #sticky-page-nav {
-background-color: rgb(13, 11, 11);
+background-color: rgba(207, 208, 187, 0.676);
 padding: 2px 0;
 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 z-index: 99; /* Justo debajo del header principal si coinciden */
@@ -60,7 +65,7 @@ padding-inline-start:10px;
 
  .sticky-nav-links a {
      text-decoration: none;
-     color: #ffffff; /* Texto blanco sobre fondo negro */
+     color: #000000; /* Texto blanco sobre fondo negro */
      font-weight: 450;
      font-size: 11px;
      text-transform: uppercase;
@@ -70,7 +75,7 @@ padding-inline-start:10px;
 
  .sticky-nav-links a:hover {
      opacity: 0.8;
-     color: orange;
+     color: rgb(255, 10, 10);
      text-decoration: solid;
      font-style: italic;
      font-family: Arial, Helvetica, sans-serif;
@@ -206,21 +211,20 @@ padding-inline-start:10px;
 
         .btn {
             display: inline-block;
-            background-color: var(--primary-color);
+            background-color: var(--black);
             color: var(--white);
             padding: 12px 24px;
             border: none;
-            border-radius: 25px; /* Botones redondeados tipo web corporativa */
             font-size: 16px;
-            font-weight: bold;
+            
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.7s ease;
             width: 100%;
             text-align: center;
         }
 
         .btn:hover {
-            background-color: #a81015;
+            background-color: #4b4444;
         }
 
         .btn-outline {
@@ -262,8 +266,8 @@ padding-inline-start:10px;
 
         /* Footer */
         footer {
-            background-color: #222222;
-            color: #aaaaaa;
+            background-color: #9ea2a7;
+            color: #000000;
             padding: 40px 20px;
             margin-top: 60px;
         }
@@ -314,4 +318,77 @@ padding-inline-start:10px;
             .nav-links {
                 display: none; /* En un entorno real llevaría menú hamburguesa */
             }
+        }
+
+
+/* Estilos específicos para el Aside */
+        .sidebar-contacto {
+            border-right: 1px solid #e9ecef;
+            height: 100%;
+        }
+        
+        .sidebar-foto-wrapper {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            background-color: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .sidebar-foto-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .horario-atencion {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .horario-atencion li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f1f1;
+            color: #555;
+        }
+
+        .horario-atencion li:last-child {
+            border-bottom: none;
+        }
+
+        .horario-atencion li strong {
+            color: #333;
+        }
+
+        /* Contenedor preparado para Nanobanana */
+        .promo-nanobanana-espacio {
+            background: linear-gradient(135deg, #fcebeb 0%, #fff 100%);
+            border-left: 4px solid #d9534f;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .badge-confianza {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #e3f2fd;
+            color: #0067b8;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
         }
