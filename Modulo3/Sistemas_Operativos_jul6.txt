@@ -37,3 +37,13 @@ arcadio.gq/index.html
 
 como se hace para ipv6
 youtube.com/watch?v=kxdqV9rYJiY
+
+
+Al terminar la unidad el alumno diseña la red lógica e implementa el Directorio Activo aplicando los conceptos de TCP/IP
+
+
+ENlace para descargar ISOS:
+drive.google.com/drive/u/1/folders/1nY-0OBpvjM3uotrCSySZ3OF4T2x84pUh
+
+
+Herramienta para controlar, serivicio de directorio que organiza, almacena y lista informacion
