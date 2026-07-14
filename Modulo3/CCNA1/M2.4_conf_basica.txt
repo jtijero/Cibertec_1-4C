@@ -1,0 +1,35 @@
+PC
+Terminal
+Sw>enable
+
+NOMBRES DEL DISPOSITIVO
+Sw# configure terminal
+Sw(conf)# hostname Sw-F1
+SW-F1(conf)#
+
+CONFIGURACION DE CONTRASEÑAS
+Sw-F1# configure terminal
+Sw-F1(config)# line console 0
+Sw-F1(config-line)# password cisco
+Sw-F1(config-line)# login
+Sw-F1(config-line)# end
+Sw-F1#
+		requerirá contraseña al modo EXEC user
+
+Sw-F1# configure terminal
+Sw-F1(config)# enable secret class
+Sw-F1(config)# exit
+Sw-F1#
+		para asegurar aceso privilegiado a EXEC
+
+
+Ejm de seguridad de las líneas VTY en un switch
+Sw-F1# configure terminal
+Sw-F1(config)# line vty 0 15
+Sw-F1(config-line)# password cisco
+Sw-F1(config-line)# login
+Sw-f1(config-line)# end
+Sw-F1#
+
+
+
