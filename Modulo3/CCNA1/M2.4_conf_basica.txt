@@ -57,7 +57,11 @@ login
 !
 end
 
+MENSAJES DE AVISO
+Swf1# configure terminal
+Swf1(config)# banner motd #Authorized Access Only#
 
+		para crear un mensaje de banner del dia
 
 
 
