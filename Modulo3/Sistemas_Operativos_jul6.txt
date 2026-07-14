@@ -46,4 +46,15 @@ ENlace para descargar ISOS:
 drive.google.com/drive/u/1/folders/1nY-0OBpvjM3uotrCSySZ3OF4T2x84pUh
 
 
-Herramienta para controlar, serivicio de directorio que organiza, almacena y lista informacion
+Herramienta para controlar, serivicio de directorio que organiza, almacena y lista información
+
+GPO Group Policy Objects
+OU Organizational Unit
+
+Bosque Dominio raiz
+	Árbol de AD   Dominio
+		Dominio hijo
+			OU
+
+Domain COntroler  DC
+Read-Only Domain COntroller RODC
