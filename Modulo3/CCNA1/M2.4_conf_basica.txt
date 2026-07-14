@@ -31,5 +31,33 @@ Sw-F1(config-line)# login
 Sw-f1(config-line)# end
 Sw-F1#
 
+ENCRIPTACION DE CONTRASEÑAS
+Sw-f1# configure terminal
+Sw-f1(config)# service password-encryption
+Sw-f1(config)#
+		para encriptar archivos startup-config running-config
+		cifrado débil
+		no se aplica a las contraseñas mientras se encian a través de los medios
+Swf1(config)# end
+Swf1# show running-config
+!
+(Output omitted)
+!
+line con 0
+password 7 094F4...
+login
+!
+line vty 0 4
+password 7 094F4...
+login
+line vty 5 15
+password 7 094F4...
+login
+!
+!
+end
+
+
+
 
 
