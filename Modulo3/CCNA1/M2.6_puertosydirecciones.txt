@@ -1,0 +1,8 @@
+la mascara de subred determina a que subred pertenece el dispositivo  - 32bits
+
+IPv6 --128bits  hexadecimales cada 4 bits(32valores) divididos cada : 
+
+INTERFACES Y PUERTOS
+Los switches de la capa 2 de Cisco IOS cuentan con puertos físicos para conectar dispositivos. Estos puertos no son compatibles con las idrecciones IP de la capa 3. En consecuencia, los switches tienen una o mas interfaces virtuales de switch (SVI). Son interfaces virtuales porque no hay hardware físico en el dispositivo asociado a ellas. Una SVI se rea en el software
+
+La SVI predeterminada es interfaz VLAN1

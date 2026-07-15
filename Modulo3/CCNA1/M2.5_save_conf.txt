@@ -111,3 +111,27 @@ MySw#
 
 MySw#
 
+
+CAPTURA DE CONFIG A UN ARCHIVO DE TEXTO<
+P1. Abrir software de emulación de terminal como PuTTY o Tera Term que ya esta conectado a un Sw
+
+P2.Habilitar el inicio de sesión en el software del terminal y asignar un nombre y una ubicación de archivo para sabe el arhivo de registro.
+{All sesión output se capturará en el archivo MySwLogs}
+
+P3. Ejecutar el show running-config comando show startup-config o en el símbolo EXEC privilegiado:
+SwF1# show running-config
+Building configuration…
+(output omitted)
+
+P4. Desactivar el inicio de sesión en el doftware del terminal. La figura muestra cómo deshabilitar el registro seleccionando None la opción de registro de sesión
+
+El archivo de texto creado se puede utilizar como un registro del modo en que se implementa actualmente el dispositivo. El archivo puede requerir edición antes de poder utilizarse para restaurar una configuración guardada a un dispositivo.
+
+Para restaurar un archivo de configuración a un dispositivo:
+
+Paso 1. Ingrese al modo de configuración global en el dispositivo.
+
+Paso 2. Copie y pegue el archivo de texto en la ventana del terminal conectada al switch.
+
+El texto en el archivo estará aplicado como comandos en la CLI y pasará a ser la configuración en ejecución en el dispositivo. Este es un método conveniente para configurar manualmente un dispositivo.
+
