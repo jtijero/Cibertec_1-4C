@@ -1,0 +1,63 @@
+Existen dos archivos de sistema que almacenan la configuración de dispositivos.
+
+startup-config - Este es el archivo de configuración guardado que se almacena en NVRAM. Contiene todos los comandos que usará el dispositivo al iniciar o reiniciar. Flash no pierde su contenido cuando el dispositivo está apagado.
+running-config - Esto se almacena en la memoria de acceso aleatorio (RAM). Refleja la configuración actual. La modificación de una configuración en ejecución afecta el funcionamiento de un dispositivo Cisco de inmediato. La memoria RAM es volátil. Pierde todo el contenido cuando el dispositivo se apaga o se reinicia.
+
+MOSTRAR LA CONFIGURACION COMPLETA ACTUALMENTE ALMACENADA EN RAM
+Swf1# show running-config
+BUilding configuration..
+!
+! Last configurstion: 1351 bytes
+!
+versión 15.0
+no service pad
+service timetamps debug datetime…
+…
+(output omitted)
+
+Para ver el archivo de donfiguracion de inicio, usar comdando show startup-config EXEC privilegiado
+
+
+
+MODIFICACION DE LA CONFIGURACION EN EJECUCION
+…
+
+Password:
+Sw>enable
+Password:
+Sw# configure terminal
+ENter…
+Sw(config)# hostname S1
+S1(config)#exit
+S1#
+%SYS...
+
+S1# copy running-onfig startup-config   <<<
+Destination file name [startup-config]?
+Building configuration…
+[OK]
+
+S1#dir ?
+flash: Directory or file name
+nvram: Directory or file name
+<cr>
+
+S1#dir nvram:
+Directory of nvram:/
+.
+.
+.
+
+S1#copy run start ; es casi  lo mismo que <<<
+Destination file name [startup-config]?
+Building configuration…
+[OK]
+
+S1#reload
+...[confirm]
+
+
+.
+.
+.
+
