@@ -60,4 +60,54 @@ S1#reload
 .
 .
 .
+User Access Varification
+Password:
+
+S1>
+
+PARA BORRAR LA CONFIGURACION
+S1>enable
+Password:
+S1# erase startup-config
+[confirm]
+[OK]
+%SYS
+
+S1# reload
+[confirm]
+
+##########
+ENTER
+
+Swicth>
+Switch>enable
+Switch# config t
+Switch(config)# hostname MySwitch
+MySwitch(config)#
+MySwitch(config)#exit
+MySwitch#
+%SYS
+
+MySwitch#copy run start
+[OK]
+MySw#
+Mysw# conf t
+MySw(config)#line con 0
+MySw(config-line)#password cisco
+MySw(config-line)#login
+MySw(config-line)#exit
+MySw(config)# hostname S1
+S1(config)#
+S1(config)#
+S1(config)#exit
+S1#
+%SYS
+
+S1# copy startup-config running-config
+.
+.
+MySw#
+%SYS
+
+MySw#
 
