@@ -2,5 +2,25 @@ Podemos admnistrar objetos GRACIAS A UN DOMINIO > crearemos objetos como > equip
 Promover un servidor signifca instalar un Directorio activo
 
 INSTALAR KALI LINUX PARA ESTE CURSO > video de 8 minutos > www.youtube.com/watch?v=ejJHUv8gkkl&t=1s
-REALIZADO > kali julSO
+REALIZADO > Kali julSO
+
+SERVICIO DE DIRECTORIO EN WINDOWS SERVER
+Adm completa
+
+DOMINIO
+Conjunto de equipos definidos por un administrador que comparten una base de datos de directorio común
+CONTROLADOR DE DOMINIO
+Equipo que ejecuta Windows Server 2019, almacena una replica del diretorio, administra los cambiso realizados en su información y replica esos cambios a otro DC
+almacena datos
+administran inicios de sesión autenticación y búsqueda de directorios de usuario
+
+ARQUITECTURA DEL DIRECTORIO ACTIVO
+ORGANIZACION JERARQUIA
+ALMACENAMIENTO ORIENTADO A OBJETOS
+
+INSTALACION DE WINSERV-2019 > REALIZADO > 5gb ram 3 nucleos
+https://drive.google.com/drive/u/1/folders/1nY-0OBpvjM3uotrCSySZ3OF4T2x84pUh
+
+
+
 

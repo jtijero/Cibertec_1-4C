@@ -1,0 +1,55 @@
+.Tipos de cables comunes
+
+Par Trenzado (Cobre)
+
+Fibra Óptica
+
+Cables Especializados (Bus)
+
+. Certificaciones de seguridad y calidad
+
+Certificación UL (Underwriters Laboratories
+
+Normativa CPR (Construcción)
+
+RoHS
+
+ANDERSON AGIPE IBAÑEZ
+9:21
+.Tipos de canalizaciones según el entorno
+
+Canaletas Metálicas (Bandejas tipo escalera o perforadas)
+
+Canaletas de PVC (Plásticas)
+
+Canaletas de Piso (Registrables)
+
+.Certificaciones y estándares de seguridad
+
+UL 94 (Clasificación de inflamabilidad)
+
+Norma ANSI/TIA-569-E
+
+Certificación LSZH (Low Smoke Zero Halogen)
+
+NEMA (National Electrical Manufacturers Association)
+
+ANDERSON AGIPE IBAÑEZ
+9:22
+.Tipos de cámaras según su aplicación
+
+Cámaras IP con PoE (Power over Ethernet)
+
+Cámaras de Domo (Dome) vs. Bala (Bullet)
+
+Cámaras con Analítica de IA integrada
+
+.Certificaciones y estándares clave
+
+ONVIF (Open Network Video Interface Forum)
+
+IP (Ingress Protection) e IK (Impact Protection)
+
+Certificación NDAA (National Defense Authorization Act)
+
+Certificación UL (como la UL 2802)
