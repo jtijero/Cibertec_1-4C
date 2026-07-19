@@ -40,4 +40,11 @@ ABRIR CMD COMO ADMINISTRADOR
 //la operación se completó correctamente
 REINICIAR LAPTOP
 
+NO FUNCIONA
+
+ABRIR CMD COMO ADMINISTRADOR
+> reg add "HKLM\System\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 0 /f
+//la operación se completo correctamente
+REINICIAR LAPTOP
+shutdown /r /t 0
 

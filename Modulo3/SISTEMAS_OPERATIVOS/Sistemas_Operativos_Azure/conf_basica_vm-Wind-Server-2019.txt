@@ -1,0 +1,64 @@
+Debido al antivirus de mi trabajo remoto, que captura toda la hypervirtualizacion, lo hare por Azure
+
+Entrar a Azure > Loguearse > Crear Maquina Virtual >
+
+DATOS BASICOS
+Suscripción
+Azure for Students
+Grupo de recursos
+(nuevo) Lab-SistemasOperativos-Cibertec
+Nombre de máquina virtual
+Wind-Server2019
+Región
+Chile Central
+Opciones de disponibilidad
+Zona de disponibilidad
+Opciones de zona
+Zona autoseleccionada
+Zona de disponibilidad
+1
+Tipo de seguridad
+Estándar
+Imagen
+Windows Server 2019 Datacenter - Gen2
+Arquitectura de VM
+x64
+Tamaño
+Standard B2ls v2 (2 vcpu, 4 GiB de memoria)
+Habilitar hibernación
+No
+Nombre de usuario
+azureadmin
+Puertos de entrada públicos
+Ninguno
+¿Ya tiene una licencia de Windows?
+No
+Azure de acceso puntual
+No
+
+DISCOS
+Tamaño del disco del SO
+Valor predeterminado de la imagen
+Tipo de disco del sistema operativo
+LRS de SSD estándar
+Usar discos administrados
+Sí
+Eliminar disco de SO con VM
+Habilitado
+Disco de SO efímero
+No
+
+
+REDES
+Red virtual
+(nuevo) Wind-Server2019-vnet
+Subred
+(nuevo) default (10.0.0.0/24)
+IP pública
+Ninguno
+Redes aceleradas
+Desactivado
+¿Quiere colocar esta máquina virtual como subyacente respecto a una solución de equilibrio de carga existente?
+No
+Eliminar NIC al eliminar la VM
+Habilitado
