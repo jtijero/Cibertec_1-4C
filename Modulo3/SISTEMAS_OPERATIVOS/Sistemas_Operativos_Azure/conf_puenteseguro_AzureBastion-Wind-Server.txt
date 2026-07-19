@@ -90,3 +90,50 @@ SIRECCION IP PUBLICA > Usar Existente
 
 DEJAR OPCIONES AVANZADAS COMO ESTA
 CREAR
+
+Resumen
+Datos básicos
+Nombre
+Bastion-lab-WindServer2019
+Suscripción
+Azure for Students
+Grupo de recursos
+Lab-SistemasOperativos-Cibertec
+Región
+Chile Central
+Zona de disponibilidad
+1, 2, 3
+Red virtual
+Wind-Server2019-vnet (Lab-SistemasOperativos-Cibertec)
+Nivel
+Basic
+Subredes
+AzureBastionSubnet
+Dirección IPv4 pública
+Wind-Server2019-vnet-IPv4
+Recuento de instancias
+2
+Copiar y pegar
+Habilitado
+Conexión basada en IP
+Deshabilitado
+Autenticación Kerberos
+Deshabilitado
+Vínculo compartible
+Deshabilitado
+Soporte técnico para el cliente nativo
+Deshabilitado
+Grabación de sesión
+Deshabilitado
+Azure Bastion privado
+Deshabilitado
+
+CREAR
+
+Ir al recurso>
+
+https://learn.microsoft.com/es-es/azure/bastion/vm-about?WT.mc_id=Portal-Microsoft_Azure_HybridNetworking
+
+https://learn.microsoft.com/es-es/training/paths/az-104-manage-virtual-networks/?WT.mc_id=Portal-Microsoft_Azure_HybridNetworking
+
+// Estado de aprovisionamiento: Succeeded
