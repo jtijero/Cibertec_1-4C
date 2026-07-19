@@ -32,3 +32,5 @@ WInd + SEGURIDAD DE WINDOWS (buscar) > SEGURIDAD DEL DISPOSITIVO
 wind + activar o descativar características de Windows (Panel de control)
 Plataforma de máquina virtual, Plataforma del hipervisor de Windows y Hyper-V DESMARCADAS
 
+NO FUNCIONA xd
+
