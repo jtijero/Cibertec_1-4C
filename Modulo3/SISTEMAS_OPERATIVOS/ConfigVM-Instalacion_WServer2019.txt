@@ -34,3 +34,10 @@ Plataforma de máquina virtual, Plataforma del hipervisor de Windows y Hyper-V D
 
 NO FUNCIONA xd
 
+PENSAR EN AZURE BASTION PARA HACER TODO EL CURSO
+ABRIR CMD COMO ADMINISTRADOR
+> bcdedit /set hypervisorlaunchtype off
+//la operación se completó correctamente
+REINICIAR LAPTOP
+
+
