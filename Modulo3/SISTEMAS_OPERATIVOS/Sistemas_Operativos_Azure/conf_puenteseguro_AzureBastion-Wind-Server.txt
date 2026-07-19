@@ -1,0 +1,68 @@
+en Azure Bastion mejor, que en Remote Desktop Connection, por ahora
+
+Ir al recurso> Conection > Bastion
+
+Confirgurar manualmente ( no dploy! ) >
+Tier > Developer o basico (no standard)
+
+DETALLES DE INSTANCIA
+NOmbre   Bastion-lab-WS2019
+NO DEJAR QUE BASTION SE INSTALE EN UNA RED NUEVA
+
+Virtual Network > Wind-Server2019-vnet (Lab-SistemasOperativos-Cibertec) > Subred se actualizara >
+(New) AzureBastionSubnet
+
+en CONFIGURAR DIRECCION IP si necesita de una IP publica
+>CREAR
+Nombre > Wind-Server2019-vnet-IPv4
+
+Resumen
+Datos básicos
+Nombre
+Bastion-lab-WS2019
+Suscripción
+Azure for Students
+Grupo de recursos
+Lab-SistemasOperativos-Cibertec
+Región
+Chile Central
+Zona de disponibilidad
+1, 2, 3
+Red virtual
+Wind-Server2019-vnet (Lab-SistemasOperativos-Cibertec)
+Nivel
+Basic
+Subredes
+AzureBastionSubnet
+Dirección IPv4 pública
+Wind-Server2019-vnet-IPv4
+Recuento de instancias
+2
+Copiar y pegar
+Habilitado
+Conexión basada en IP
+Deshabilitado
+Autenticación Kerberos
+Deshabilitado
+Vínculo compartible
+Deshabilitado
+Soporte técnico para el cliente nativo
+Deshabilitado
+Grabación de sesión
+Deshabilitado
+Azure Bastion privado
+Deshabilitado
+
+CREAR
+
+Aparecio un error
+
+
+LO QUE INDICA GEMINI
+Si analizamos el texto en rojo de tu captura, dice: "No se encontró el recurso... subnets/AzureBastionSubnet".
+
+Azure requiere una subred (una subdivisión de tu red virtual) dedicada de manera exclusiva y nombrada exactamente de esa forma para poder instalar Bastion. Aunque en las pantallas anteriores parecía que la iba a crear, a veces el portal tiene un pequeño bug y no lo hace automáticamente. Como no encontró su espacio reservado, canceló la instalación.
+
+La buena noticia es que tu Dirección IP Pública sí se creó con éxito (como indica el check verde en tu captura). Solo tenemos que crear esa subred manualmente, lo cual es muy rápido.
+
+BUSQUEDA DE AZUL > REDES VIRTUALES > Wind-Server2019 > Configuración > Subredes
