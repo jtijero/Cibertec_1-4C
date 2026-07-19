@@ -1,12 +1,12 @@
 en Azure Bastion mejor, que en Remote Desktop Connection, por ahora
 
-Ir al recurso> Conection > Bastion
+Ir al recurso> Conection > Bastion  #similar
 
 Confirgurar manualmente ( no dploy! ) >
 Tier > Developer o basico (no standard)
 
 DETALLES DE INSTANCIA
-NOmbre   Bastion-lab-WS2019
+NOmbre   Bastion-lab-WindServer2019
 NO DEJAR QUE BASTION SE INSTALE EN UNA RED NUEVA
 
 Virtual Network > Wind-Server2019-vnet (Lab-SistemasOperativos-Cibertec) > Subred se actualizara >
@@ -66,3 +66,27 @@ Azure requiere una subred (una subdivisión de tu red virtual) dedicada de maner
 La buena noticia es que tu Dirección IP Pública sí se creó con éxito (como indica el check verde en tu captura). Solo tenemos que crear esa subred manualmente, lo cual es muy rápido.
 
 BUSQUEDA DE AZUL > REDES VIRTUALES > Wind-Server2019 > Configuración > Subredes
+
+> +Subred
+Nombre > AzureBastionSubnet (automatico seleccionando el proposito)
+AGREGAR
+
+
+BUSQUEDA DE AZUL > Wind-Server2019   v    Menu Hamburguesa> Maquinas Virtuales
+Aparecerá una lista con tus servidores > Hacer click en nombre Wind-Server2019
+
+CONECTAR> Bastion   #Similar
+>Configruar manualmente
+
+DETALLES DE INSTANCIA
+NOmbre   Bastion-lab-WindServer2019
+NO DEJAR QUE BASTION SE INSTALE EN UNA RED NUEVA
+
+Virtual Network > Wind-Server2019-vnet (Lab-SistemasOperativos-Cibertec) > Subred se actualizara >
+AzureBastionSubnet
+
+Vincular la IP pública
+SIRECCION IP PUBLICA > Usar Existente
+
+DEJAR OPCIONES AVANZADAS COMO ESTA
+CREAR
