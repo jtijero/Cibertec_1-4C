@@ -42,6 +42,23 @@ OK
 
 
 
+SIGUIENDO....
+> CLick derecho DLC2005.local.ET1> New > Organizational Unit > DLC2005
+OK
+>> CLick derecho DLC2005 > New > OU > USUARIOS
+OK
+
+>> DLC2005 >para> GRUPOS
+
+>>> USUARIOS >New > OU > GERENCIA
+>>> USUARIOS >para> PERSONAL
+>>> USUARIOS >para> REMOTO
+
+>Click derecho OU GRUPOS > New > Group > Name: Oficinas
+>OU GRUPOS >para> Ventas
+>OU GRUPOS >para> Almacen
+
+
 
 
 
