@@ -59,6 +59,26 @@ OK
 >OU GRUPOS >para> Almacen
 
 
+creación de usuarios
+OU GERENCIA > New > User
+First name: aperez, User logon name: aperez
+NEXT
+Password: Redes12345
+Desmarque 1ra > marque Password never expires
+NEXT	FINISH
+
+OU GERENCIA >para> respinoza
+OU GERENCIA >para> Imora
+OU GERENCIA >para> osuarez
+
+En OU GRUPOS > Click derecho Oficionas > Properties > pastaña Members > Add
+> escribir: aperez; respinoza; Imora; osuarez
+> Check Names > OK
+
+>para> OU PERSONAL
+>>para>> Ventas
+>para> REMOTO
+>>para>> Almacen
 
 
 
