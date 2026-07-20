@@ -1,0 +1,21 @@
+CASO1
+
+INSTALAR EL ROL AD
+>ABRIR SERVER MANAGER
+> Add roles and features
+> NEXT 3 veces > SERVER ROLES>
+> Active Diretory Domain Services
+> Add features
+ De aquí Next a todo e Install
+
+> PROMOTE THIS SERVER TO A DOMAIN CONTROLLER
+> Add a new forest
+Root domain name > DLC2005.local.ET1
+NEXT
+pide una contraseña de restauración (DSRM
+> Redes12345LT
+NEXT NEXT NEXT NEXT NEXT
+>INSTALL demoro un poco
+
+DISCONNECTED en mi caso
+Me reconectare por Bastion denuevo

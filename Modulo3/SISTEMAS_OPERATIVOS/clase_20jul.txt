@@ -13,3 +13,5 @@ reto libre
 
 virtual box instalado ya hay una maquina corriendo y lo comprimen en un formato tipo ova
 Maquina virtual lista para usar
+drive.google.com/drive/u/1/folders/1nY-0OBpvjM3uotrCSySZ3OF4T2x84pUh
+Descargar > Arhivo > importar > doble click
