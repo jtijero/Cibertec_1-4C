@@ -19,3 +19,36 @@ NEXT NEXT NEXT NEXT NEXT
 
 DISCONNECTED en mi caso
 Me reconectare por Bastion denuevo
+
+Reconectando
+dice: Please wait for the Group Policy Client
+ESPERE COMO 4minutos, cerre ventana de bastion y volvi a conectar, seguia diciendo lo mismo y sin apagarla ya cargo
+
+
+
+ABRIR CONSOLA DE ADMINISTRACION
+SERVER MANAGER> Nav negro > Tools > Active Directory Users and Computers
+
+>Click derecho a DLC2005.local.ET1
+>New > Organizational Unit > Name>USUARIOS
+OK
+Me equivoque ahí
+Nav Negro> Tools > Active Directory Users and Computers > View > Advance features
+DLAC2005.local.ET1> click derecho USUARIOS
+> Object > Desmarcar Protect object from accidental deletion
+OK
+>Click derecho USUARIOS > Delete > Yes
+>DESMARCAR ADVANCE FEATURES en VIEW
+
+
+
+
+
+
+
+
+
+
+
+
+
