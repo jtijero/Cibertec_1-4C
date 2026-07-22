@@ -1,0 +1,14 @@
+en Cyosset2025
+
+De manera normal:
+Descargar ISO WindowsServer2019 > VirtualBox > Nueva
+name: wind-server2019-CIBERTEC > 2cpus 4096 memoria
+> Configuración
+> Sistema > Aceleración > Paravirtualizacion Interface Hyper-V
+> Almacenamiento > Atributos > Usar cache de I/O anfitrión
+> INICIAR > Install > lógica
+esperar como 10min en Instalando Windows
+
+Apareció error Cargar Controlador
+Va recontra fluido en mi otra laptop pero no podría tener varias vm a la vez porque no tiene muchos recursos, y como no encuentro mi usb 
+ABORTAMOS Y SEGUIMOS CON AZURE
