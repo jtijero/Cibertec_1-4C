@@ -1,0 +1,8 @@
+Server Manage> Nav Negro > Tools > Active Directory User and Computers
+> View...
+
+en vez de borrar mejor hago otra OU, encima son buenas practicas
+
+> View> Advanced Features
+> CLick derecho > DLC2005.local.ET1 > New > OU > Unidad2.julSO
+>
