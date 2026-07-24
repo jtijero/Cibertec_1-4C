@@ -1,0 +1,17 @@
+demostración y conceptos de curso, que aprenderemos y también de que trta el curso
+Cada vez un poco mas especifico
+Cableado estructurado horizontal para cada piso con su cuarto de comunicaciones
+definir en el plano el cuarto, a partir de allí se diseña la red hacia los endpoints
+
+
+Ventajas de red estructurada
+Escalabilidad  >>  Modularidad dice
+planificación a futuro
+tolerancia a fallos
+Acepta cualquier tecnología
+Empleo de Normas estándar
+Ahorro de energía
+extiende el tiempo de vida de los equipos
+
+Gabinete cuando esta cerrado
+Rack cuando no, dice
