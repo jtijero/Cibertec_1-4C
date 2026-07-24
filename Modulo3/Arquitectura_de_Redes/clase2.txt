@@ -1,0 +1,24 @@
+objetivo de la clase_ configurar un precableado en base a un plano dado
+El cableado Horizontal se realiza en un piso
+El cableado vertical se realiza entre pisos
+El cableado entre edificios tiene un nombre..
+Se usa un rack cuando se tiene un cuarto de comunicaciones
+
+Todavía no habla de especificaciones de cables,por ahora, Ubicación
+
+Access point se conecta con switch
+Camino mas corto para cableado horizontal
+3 redes LAN pag16, definición por endpoints y sw 
+
+Practicando con un plano simple
+Ubicar el cuartod e comunicación
+Definir lugar de los endpoints
+Definir el Access point--conectado físicamente pero da inalambrico
+>> Televisores, cámara, pc, punto de data, punto de voz
+Empezar a hacer cableado > camino mas corto evitando curvas
+
+PUNTO DE PRESENCIA, donde llega la comunicación del exterior POP
+equivalente a la caja gris que recibe la firba óptica y se conecta al router-modem
+Elegir piso como principal para que haya balanceo 
+MDF >> principal
+
