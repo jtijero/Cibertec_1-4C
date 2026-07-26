@@ -1,0 +1,12 @@
+después de haber realizado la ET1 y antes de hacer las otras VMs
+
+> ir A maquinas virtuales
+> ir a Wind-Server2019
+> Información General > Dirección IP privada
+
+Configurar la VNet como Enrutador Inteligente
+> Redes virtuales
+> Wind-Server2019-vnet
+> configuración > Servidores DNS > Cambiar Servicio DNS proporcionado por Azure
+> Personalizado > 10.0.0.4
+// Reiniciar Vm si esta prendida
