@@ -1,0 +1,9 @@
+descarté los temas de quedarme con la VM, con la Vnet.. todo ello
+y viendo el presupuesto este paso es el mejor
+
+Buscar > Grupo de Recursos > Lab-SistemasOperativos-Cibertec
+Al lado de + Crear > Eliminar Grupo de Recursos
+> Escribir el nombre exacto > Lab-SistemasOperativos-Cibertec
+ELIMINAR
+
+
