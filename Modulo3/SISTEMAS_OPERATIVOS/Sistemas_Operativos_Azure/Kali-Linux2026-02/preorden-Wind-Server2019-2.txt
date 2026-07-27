@@ -1,0 +1,54 @@
+Conectar con Bastion
+VM > Redes > COnectar > Bastion
+> configurar manualmente mejor >
+
+Grupo de recursos > Kali-Linux2026-02_group
+NOmbre > Bastion-Wind-Server2019-2_CCentral
+Región > Chile Central
+Nivel > Basico
+RED FUNCIONAL > Virtual Network > Lab-SistemasOperativos-vnet (Kali-Linux2026-02_group)
+Subred automáticamente > (New) AzureBastionSubnet
+Dirección IP publica > Crear
+Nombre de dirección IP publica > WInd-Server2019-2-IPv4
+REVISAR Y CREAR
+
+Resumen
+Datos básicos
+Nombre
+Bastion-Wind-Server2019-2_CCentral
+Suscripción
+Azure for Students
+Grupo de recursos
+Kali-Linux2026-02_group
+Región
+Chile Central
+Zona de disponibilidad
+1, 2, 3
+Red virtual
+Lab-SistemasOperativos-vnet (Kali-Linux2026-02_group)
+Nivel
+Basic
+Subredes
+AzureBastionSubnet
+Dirección IPv4 pública
+WInd-Server2019-2-IPv4
+Recuento de instancias
+2
+Copiar y pegar
+Habilitado
+Conexión basada en IP
+Deshabilitado
+Autenticación Kerberos
+Deshabilitado
+Vínculo compartible
+Deshabilitado
+Soporte técnico para el cliente nativo
+Deshabilitado
+Grabación de sesión
+Deshabilitado
+Azure Bastion privado
+Deshabilitado
+
+Según la IA
+El "Por qué" del bloqueo:
+El asistente automático intentó desplegar el servicio de Bastion, pero falló al crear su "zona de aterrizaje": una subred obligatoria llamada exactamente AzureBastionSubnet. Como la subred no existe, el despliegue del servicio da un error de "Bad Request"
