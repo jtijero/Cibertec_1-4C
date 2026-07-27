@@ -2,13 +2,130 @@ Después de la conf de la Vnet-DNS
 
 > Maquinas Virtuales > Crear > Maquina Virtual de Azure
 > Suscripción > Azure for Students
-> Grupo de recursos > Lab-SistemasOperativos-Cibertec
-> Región.. no aparece CHile Central (obligatorio elegir la misma que Wind-Server2019) >
+> Grupo de recursos > Lab-SistemasOperativos-Cibertec-2
+> Región.. no aparece CHile Central (obligatorio elegir la misma que Wind-Server2019) >> Ahora creando esta VM primero
 >> Opciones de disponibilidad > No se requiere redundancia de la infraestructura
-> buscar en Region> CHile Central
+> buscar en Region> Chile Central
 NO ME FUNCIONO
 
 > Recargar pagina Fn + F5
 > Azure for Students
 > Lab-SistemasOperativos-Cibertec
-ir a > Tipo de seguridad > Estandar
+ir a > Tipo de seguridad > Estándar
+
+> Maquinas Virtuales > Crear > Maquina Virtual de Azure
+> Suscripción > Azure for Students
+> Grupo de recursos > Lab-SistemasOperativos-Cibertec-2
+> Region obligatorio elegir la misma que Wind-Server2019) >> Ahora creando esta VM primero
+> Opciones de disponibilidad > No se requiere redundancia de la infraestructura
+> Tipo seguridad > Estándar
+> Imagen > Kali2026.2 - x64 gen. 2
+> x64
+Tamaño > Standard_B2ls_v2 4Gib de memoria
+> tipo de autenticación > contraseña
+> ***
+> Discos > SSD Estándar
+> Red Virtual > Crear nuevo > Nombre > Lab-SistemasOperativos-vnet
+Subred (nuevo) default (10.0.0.0/24)
+> Grupo de seguridad de red de NIC > Basico
+> Puertos de entrada públicos > Ninguno
+> check a Eliminar NIC con VM
+CREAR
+
+Datos básicos
+Suscripción
+Azure for Students
+Grupo de recursos
+(nuevo) Kali-Linux2026-02_group
+Nombre de máquina virtual
+Kali-Linux2026-02
+Región
+Chile Central
+Opciones de disponibilidad
+No se requiere redundancia de la infraestructura
+Opciones de zona
+Zona autoseleccionada
+Tipo de seguridad
+Estándar
+Imagen
+Kali 2026.2 - Gen2
+Arquitectura de VM
+x64
+Tamaño
+Standard B2ls v2 (2 vcpu, 4 GiB de memoria)
+Habilitar hibernación
+No
+Tipo de autenticación
+Contraseña
+Nombre de usuario
+azureadmin
+Puertos de entrada públicos
+Ninguno
+Azure de acceso puntual
+No
+Discos
+Tamaño del disco del SO
+Valor predeterminado de la imagen
+Tipo de disco del sistema operativo
+LRS de SSD estándar
+Usar discos administrados
+Sí
+Eliminar disco de SO con VM
+Habilitado
+Disco de SO efímero
+No
+Redes
+Red virtual
+(nuevo) Lab-SistemasOperativos-vnet
+Subred
+(nuevo) default (10.0.0.0/24)
+IP pública
+Ninguno
+Redes aceleradas
+Desactivado
+¿Quiere colocar esta máquina virtual como subyacente respecto a una solución de equilibrio de carga existente?
+No
+Eliminar NIC al eliminar la VM
+Habilitado
+Administración
+Microsoft Defender for Cloud
+Básico (gratis)
+Identidad administrada asignada por el sistema
+Desactivado
+Inicio de sesión con Microsoft Entra ID
+Desactivado
+Apagado automático
+Desactivado
+Habilitar evaluación periódica
+Desactivado
+Habilitar revisión en caliente
+Desactivado
+Opciones de orquestación de revisiones
+Valor predeterminado de la imagen
+Supervisión
+Alertas
+Desactivado
+Diagnósticos de arranque
+Activado
+Habilitar diagnósticos del SO invitado
+Desactivado
+Habilitar supervisión de estado de la aplicación
+Desactivado
+Opciones avanzadas
+Extensiones
+Ninguno
+Aplicaciones de máquina virtual
+Ninguno
+Cloud-init
+No
+Datos de usuario
+No
+Tipo de controladora de disco
+SCSI
+Grupo con ubicación por proximidad
+Ninguno
+Grupo de reserva de capacidad
+Ninguno
+
+Antes de crear la otra VM > Detener KALI
+

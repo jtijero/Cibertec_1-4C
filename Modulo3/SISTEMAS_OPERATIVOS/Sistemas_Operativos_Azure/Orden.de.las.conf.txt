@@ -1,9 +1,15 @@
-AHora que tuve que borrar todo, hare los pasos que hice agregándole 2 y en la región East US
+AHora que tuve que borrar todo, y de haber intentado los pasos en la región Brazil South y no se pudo
+Hare la creación de vm de Kali para seguido de ello
 
+> conf_basica_vm-Kal.txt
+	Antes de crear la otra VM > Detener KALI
+	> ANTERIROR > Crear otra VM >
 Wind-Server-2019-2
 > conf_basica_vm-Wind-Server-2019.txt
 	Región East US bloqueada por política de CIBERTEC
+	AHora Brazil South no admite la maquina Standard de 4 de ram
+	Volvemos a CHile Central
+	COmenzare con Kali
 > conf_puenteseguro_AzureBastion-Wind-Server.txt
 > parte de ET1 > documentación.txt  v  nuevas_OU_(reciclaje).txt
 > conf_Vnet-DNS
-> conf_basica_vm-Kal.txt
