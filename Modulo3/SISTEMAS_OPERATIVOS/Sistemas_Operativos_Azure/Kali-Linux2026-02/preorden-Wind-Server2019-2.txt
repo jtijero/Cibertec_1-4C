@@ -49,6 +49,78 @@ Deshabilitado
 Azure Bastion privado
 Deshabilitado
 
+ERROR
+
 Según la IA
 El "Por qué" del bloqueo:
 El asistente automático intentó desplegar el servicio de Bastion, pero falló al crear su "zona de aterrizaje": una subred obligatoria llamada exactamente AzureBastionSubnet. Como la subred no existe, el despliegue del servicio da un error de "Bad Request"
+
+>Buscar > Redes Virtuales > Lab-SistemasOperativos-vnet
+> COnfiguracion > Subredes > +Subred >
+> Propósito de la Subred > Azure Bastion > automáticamente AzurebastionSubred > 
+Habilitar Subred Privada > Desmarcado
+
+AGREGAR
+
+BUscar > Mauqinas Virtuales > Wind-Server2019-2
+Se apreto por error el botón de Implementación de Bastion en lugar de Configurar manualmente
+>> Grupo de Recursos > Kali-Linux2026-02_group
+ACTUALIZAR AZTUALIZAR
+> Dar check a Lab-SistemasOperativos-vnet-bastion (es el que tiene icono de bastion)
+> Eliminar (esta ubicado todo a la derecha en el nav) >ELIMINAR
+Demoro un poco pero se elimino
+> VMs > Redes > Bastion > COnfigurar manualmente 
+> Nombre > Bastion-Lab-Central
+> Nivel > Basico
+> Red Virtual > Subred en automatico AzureBastionSubnet > 
+
+Resumen
+Datos básicos
+Nombre
+Bastion-Lab-Central
+Suscripción
+Azure for Students
+Grupo de recursos
+Kali-Linux2026-02_group
+Región
+Chile Central
+Zona de disponibilidad
+1, 2, 3
+Red virtual
+Lab-SistemasOperativos-vnet (Kali-Linux2026-02_group)
+Nivel
+Basic
+Subredes
+AzureBastionSubnet
+Dirección IPv4 pública
+Lab-SistemasOperativos-vnet-IPv4
+Recuento de instancias
+2
+Copiar y pegar
+Habilitado
+Conexión basada en IP
+Deshabilitado
+Autenticación Kerberos
+Deshabilitado
+Vínculo compartible
+Deshabilitado
+Soporte técnico para el cliente nativo
+Deshabilitado
+Grabación de sesión
+Deshabilitado
+Azure Bastion privado
+Deshabilitado
+
+CREAR
+Tomo 8 min aprox
+
+
+
+
+
+
+
+
+
+
+
