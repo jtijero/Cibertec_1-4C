@@ -10,7 +10,7 @@ Grupo de recursos
 Nombre de máquina virtual
 Wind-Server2019
 Región
-Chile Central
+Chile Central  >>> East US mejor
 Opciones de disponibilidad
 Zona de disponibilidad
 Opciones de zona

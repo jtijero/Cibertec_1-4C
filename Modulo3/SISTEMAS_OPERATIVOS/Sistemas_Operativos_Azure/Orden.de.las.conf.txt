@@ -1,0 +1,9 @@
+AHora que tuve que borrar todo, hare los pasos que hice agregándole 2 y en la región East US
+
+Wind-Server-2019-2
+> conf_basica_vm-Wind-Server-2019.txt
+	Región East US bloqueada por política de CIBERTEC
+> conf_puenteseguro_AzureBastion-Wind-Server.txt
+> parte de ET1 > documentación.txt  v  nuevas_OU_(reciclaje).txt
+> conf_Vnet-DNS
+> conf_basica_vm-Kal.txt
