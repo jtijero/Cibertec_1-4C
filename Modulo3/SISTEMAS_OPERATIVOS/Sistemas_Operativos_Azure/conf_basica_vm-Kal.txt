@@ -1,0 +1,14 @@
+Después de la conf de la Vnet-DNS
+
+> Maquinas Virtuales > Crear > Maquina Virtual de Azure
+> Suscripción > Azure for Students
+> Grupo de recursos > Lab-SistemasOperativos-Cibertec
+> Región.. no aparece CHile Central (obligatorio elegir la misma que Wind-Server2019) >
+>> Opciones de disponibilidad > No se requiere redundancia de la infraestructura
+> buscar en Region> CHile Central
+NO ME FUNCIONO
+
+> Recargar pagina Fn + F5
+> Azure for Students
+> Lab-SistemasOperativos-Cibertec
+ir a > Tipo de seguridad > Estandar
