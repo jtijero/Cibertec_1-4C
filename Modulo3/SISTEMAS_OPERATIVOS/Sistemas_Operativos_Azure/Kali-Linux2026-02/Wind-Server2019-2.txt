@@ -1,0 +1,23 @@
+Cambiar Perfil de Red a Privado
+
+Settings > Network > Ethernet > conexión "Network > Private
+(para conectar kali-linux2026-02 y/o cyos-set)
+
+Server Manager > Add roles and features > check en Active Directory Domain Services
+> NEXT NEXT NEXT > Install
+
+Promote this server to a domain controller
+> Add New Forest > cibertec.local.v2 > NEXT
+> Password > Bastion$ltdv2 NEXT
+> Ingnorar lo de DNS) NEXT
+> Se autocompletara "CIBERTEC" NEXT
+> Dejar Paths asi en predeterminado NEXT
+NEXT
+All prerequisite checks passed successfully > INSTALL
+
+Derrepente regrese a la pestaña de Chrome con la VM abierta y me apareció para reconectar
+Please wait for the Group Policy Client...
+
+YASTA
+
+Tools > Active Directory Users and Computers
