@@ -14,3 +14,7 @@ Preferred DNS server > 10.0.0.5 (IP privada de Wind-Server2019-2)
 OK
 CLOSE
 
+SETTINGS> Buscar ABOUT PC>
+Advanced system settings
+> change.. > COmputer name > CL-Wind10-lcc(mi caso) > 
+Domain > cibertec.local.v2(Nombre de tu dominio, este es el mio)
