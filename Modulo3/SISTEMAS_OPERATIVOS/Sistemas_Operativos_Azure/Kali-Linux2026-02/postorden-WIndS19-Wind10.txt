@@ -1,0 +1,16 @@
+OOBE de Windows 10 después de conectarla
+
+> Yes    v    > ajustes> Network> Private
+
+> configuración > network > ethernet > change adapter options
+
+Ethernet > click > propiedades(Properties) > Selecciona solo Internet Protocol Version 4 (TCP/IPv4) > Properties
+
+DE PASO REVISAR TAMBIEN
+VM > Wind-Server2019-2 > REDES > Dirección IP privada > 10.0.0.5 (mi caso)
+
+Internet Protocol Version 4 (TCP/IPv4) > General > Use the following DNS server addresses> 
+Preferred DNS server > 10.0.0.5 (IP privada de Wind-Server2019-2)
+OK
+CLOSE
+
