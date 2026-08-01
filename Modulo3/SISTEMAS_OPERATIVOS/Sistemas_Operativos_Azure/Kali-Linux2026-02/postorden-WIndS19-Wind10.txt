@@ -18,3 +18,28 @@ SETTINGS> Buscar ABOUT PC>
 Advanced system settings
 > change.. > COmputer name > CL-Wind10-lcc(mi caso) > 
 Domain > cibertec.local.v2(Nombre de tu dominio, este es el mio)
+
+Ocurre un error 
+
+Por Consola > 
+PowerShell en administrador > Rename-Computer -NewName "Wind10-Client-L"
+Restart-Computer
+
+1min para reconectar
+> click derecho Windows > Run > ncpa.cpl > Ethernet > Propierties > Check en Internet Protocol Version 4 (TCP/IPv4) > NO PERMITE HACER CLICK EN PROPERTIES (COMPORTAMIENTO CLASICO UAC) >
+
+cmd > ejecutar como admin > ncpa.clp >>> NO FUNCIONA TAMPOCO
+
+> INICIO > Powershell > ejecutar como admin > Get-NetAdapter
+ANALIZAR
+> Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses "10.0.0.5"
+Saltara de manera normal > todo funciono bien
+
+Iniciar VM Wind-Server2019-2
+EN Powershell de Wind10-Client > ping Cibertec.local.v2
+Deberia funcionar ya que el servidor esta iniciado
+> Settings > System > About > Advanced system settings > Computer Name > Change
+> Domain > Cibertec.local.v2 
+OK
+pedirá credenciales > azureadmin > contraseña de Windows Server
+Bienvenida al dominio!
