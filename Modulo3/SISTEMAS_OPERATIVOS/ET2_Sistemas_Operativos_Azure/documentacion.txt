@@ -97,6 +97,21 @@ Elegir > Save the custom file screen without creating a template
 OK
 
 
+Cuota de Carpeta FSRM 2000MB Limite/20 MB Alerta
+En > File Server > Resoure Manager > expandir Quota Management > Subcarpeta Quotas
+> panel derecho > Create Quota.. > Quota path> Browse > C:\CARPETA_CIBERTEC_ET2
+OK
+
+> seleccionar Define custom quota properties > Custom Properties.. > 
+En > Space limit > 200 > MB > Seleccionado Hard quota
+En > Notification thresholds > Add..
+> Generate notifications when usage reaches (%) > 10 > ósea 20MB
+OK
+
+OK
+CREATE
+Elegir > Save the custom quota without creating a template
+OK
 
 
 
