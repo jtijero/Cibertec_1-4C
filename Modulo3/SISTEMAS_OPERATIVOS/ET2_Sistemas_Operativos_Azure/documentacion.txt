@@ -107,6 +107,7 @@ En > Space limit > 200 > MB > Seleccionado Hard quota
 En > Notification thresholds > Add..
 > Generate notifications when usage reaches (%) > 10 > ósea 20MB
 OK
+EN pestaña Event Log > marcar Send warning to Event log
 
 OK
 CREATE
@@ -114,6 +115,17 @@ Elegir > Save the custom quota without creating a template
 OK
 
 
+Cuota por Usuario NTFS (20MB Limite)
+File Explore > This PC > click derecho en C:\ > Properties > pestaña Quota >
+> Marcar Enable quota management > marcar Deny disk space to users exceeding quota limit >
+> Quota Entries.. > sea abrió una nueva ventna > En menú superior de esa ventana > 
+> Quota > New Quota Entry.. > escribir user > jtijero (mi caso) > Check Names > OK
+
+en ventana que aparece > Limit disk space to
+> 20 MB
+en > Set warning level to > 2 MB
+OK
+> Cerrar Quota Entries > OK en ventana de properties del disco C > advertencia > OK
 
 
 
