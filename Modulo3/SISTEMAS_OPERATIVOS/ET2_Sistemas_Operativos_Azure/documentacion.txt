@@ -1,0 +1,85 @@
+Server Manager> Tools> Active Directory User and Computers> crear nueva OU
+click derecho en dominio> new > OU >
+gerencia > con Protect
+
+click derecho en dominio > New > OU > personal 
+
+click derecho OU gerencia > New Group > contabilidad > Security, Global
+
+click derecho OU personal > New > Group > almacen
+
+> OU gerencia > New > User > scamargo > 123ET2$
+>> y para >> sdavila
+
+> OU personal > New > User > zbalandra
+>> y para >> nticse
+
+Click derecho sobre los usuarios > Add to a group.. > escribir nombre de grupo
+
+en dominio creo User > jtijero >> Bastion123$
+
+
+
+
+carpetas compartidas y permisos
+
+Explorador de Archivos > C:\ > crear carpetas > GERENCIA y PERSONAL
+
+compartir GERENCIA full Control a Scamargo:
+>Server Manager > File and Storage Services 
+> Shares > Tasks > New Share..
+> SMB Share - Quick > Type a custom path > :C\GERENCIA
+NEXT NEXT 
+> pestaña permissions > Customize permissions
+> pestaña Share > Remove Everyone
+> Add > Select a principal > scamargo > check casilla Full Control
+
+para comprobar: 
+En ventana Advanced Security Settings for GERENCIA > click pestaña Effective Access > Select a user > scamargo > check Names >
+OK > View effective access
+
+Aparece que Access limited by File Permissions
+
+> navegar a carpeta C:\ > click derecho GERENCIA > Properties > 
+pestaña Security > Edit.. >
+> scamargo > Check Names > OK
+> seleccionar scamarago > check en Allow Full control 
+Apply > OK
+
+en ventana New Share Wizard > NEXT 
+>pestaña de confirmación > CREATE
+
+
+
+compartir PERSONAL oculta, Lectura para almacen:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
