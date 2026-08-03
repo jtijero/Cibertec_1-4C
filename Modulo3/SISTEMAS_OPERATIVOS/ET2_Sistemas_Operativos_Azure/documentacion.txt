@@ -73,6 +73,42 @@ Apply > OK
 NEXT > CREATE
 
 
+Validar e Instalar el Rol FSRM
+
+Server Manager > Add roles and features
+NEXT NEXT NEXT
+expandir > File and Storage Services > expandir > File and iSCI Services > 
+Marcar File Server Resource Manager > aparecerá ventana >click en Add Features > NEXT NEXT.. > INSTALL
+Close
+
+> abrir File Explore > This PC > C:\ > New > Folder > CARPETA_CIBERTEC_ET2
+
+> Server Manager > Tools > expandir flecha File Server Resource Manager >
+expandir > File Screening Managment > click File Screens>
+a la derecha > Create File Screen.. > Browse
+> navegar hasta C:\CARPETA_CIBERTEC_T2
+OK
+
+> Define custom file screen properties > Custom Properties.. > seleccionado Active screenning: Do not allow users to sabe unauthorized files > 
+En File groups > buscar y marcar > Audio and Video Files > Edit > seleccionar todos > Remove > Files to include > *.mp4
+OK
+CREATE
+Elegir > Save the custom file screen without creating a template
+OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
