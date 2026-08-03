@@ -53,13 +53,24 @@ en ventana New Share Wizard > NEXT
 
 compartir PERSONAL oculta, Lectura para almacen:
 
+Server Manager > File and Storage Services > Shares
+> Shares > Tasks > New Share..
+> SMB Share - Quick > Type a custom path > :C\PERSONAL
+NEXT 
 
+En share name > agregar $ >PERSONAL$
+NEXT NEXT
+> pestaña permissions > Customize permissions
+> pestaña Share > Remove Everyone
+> Add > Select a principal > almacen2 > check Names > OK
+> Read > OK
 
+Permissions > Select a Principal > 
+> almacen2 > Check Names > OK
+Read & execute, List folder contents, Read > Marcados
 
-
-
-
-
+Apply > OK 
+NEXT > CREATE
 
 
 
