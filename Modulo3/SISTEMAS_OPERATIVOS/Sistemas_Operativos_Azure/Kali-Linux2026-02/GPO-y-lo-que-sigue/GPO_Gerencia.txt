@@ -28,3 +28,31 @@ Apply
 OK
 
 Cerrar ventana de Group Policy Management Editor
+
+
+A la Hora de comprobarlo o intentar entrar con un user de gerencia aparecieron dificultades:
+Otorgar Permisos de Escritorio Remoto:
+entrar con azure admin >Boton de Inicio > Computer Managment > Enter
+en panel izquierdo > System Tools > Local Users and Groups > click en carpeta Groups
+en pane central > buscar grupo y doble click en Remote Desktop Users
+> Add… > Logueo con azureadmin > Locations > Seleccionar Dominio >Cibertec.local.v2 >
+OK
+> scamargo > check Names > OK
+Apply
+OK
+Boton Inicio > azureadmin> Sign out > la pestaña se cerrara y mostrara botón de reconexión, cerrar pestaña y loguearse 
+> scamargo@cibertec.local.v2 > 123ET2$ (mi caso)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,3 +14,4 @@ Wind-Server-2019-2
 > parte de ET1 > documentación.txt  v  nuevas_OU_(reciclaje).txt
 > conf_Vnet-DNS
 > ET2_ creando nueva OU
+> 
