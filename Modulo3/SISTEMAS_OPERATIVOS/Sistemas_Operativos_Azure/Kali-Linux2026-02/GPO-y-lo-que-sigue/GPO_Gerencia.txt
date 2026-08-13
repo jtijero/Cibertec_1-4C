@@ -1,0 +1,30 @@
+Creación y enace de la GPO
+Server manager > Group Policy Management
+Desplegar bosque> CLick en flechita Forest:cibertec.local.v2 >
+
+buscar OU gerencia >
+click derecho > Create GPO in this domain, And Link it here..>
+GPO_Seguridad_Gerencia >
+OK
+
+Desplegar OU gerencia > click derecho GPO_Seguridad_Gerencia > Edit >
+Se abre Group Policy Management Editor
+
+Para Mapeo de Red >
+en panel izquierdo> User COnfiguration > Preferences > Windows Settings > Drive Maps
+Click derecho en espacio en blaco> New> Mapped Drive
+NO recuerdo muy bien jaja> en pestaña General:
+Action> Update   Location> Ip privada de servidor > (alt+92 porque no funciona alt gr)> \\10.0.0.5\GERENCIA (mi caso)
+
+Label as > Disco Gerencia
+Direver Letter> Use> letra G
+Apply>
+OK
+
+Bloqueo de Panel de COntrol>
+en el panel izquierdo> User Configuration> Policies > Administrative Templates> Control Panel> 
+en pnale derecho> doble click en Prohibit Access to Control Panel and PC settings> Not Configured > Enabled
+Apply 
+OK
+
+Cerrar ventana de Group Policy Management Editor
