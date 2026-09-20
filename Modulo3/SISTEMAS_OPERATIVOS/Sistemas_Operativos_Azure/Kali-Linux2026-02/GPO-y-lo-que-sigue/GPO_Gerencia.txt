@@ -1,4 +1,4 @@
-Creación y enace de la GPO
+Creación y enlace de la GPO
 Server manager > Group Policy Management
 Desplegar bosque> CLick en flechita Forest:cibertec.local.v2 >
 
@@ -12,7 +12,7 @@ Se abre Group Policy Management Editor
 
 Para Mapeo de Red >
 en panel izquierdo> User COnfiguration > Preferences > Windows Settings > Drive Maps
-Click derecho en espacio en blaco> New> Mapped Drive
+Click derecho en espacio en blanco> New> Mapped Drive
 NO recuerdo muy bien jaja> en pestaña General:
 Action> Update   Location> Ip privada de servidor > (alt+92 porque no funciona alt gr)> \\10.0.0.5\GERENCIA (mi caso)
 
@@ -34,7 +34,7 @@ A la Hora de comprobarlo o intentar entrar con un user de gerencia aparecieron d
 Otorgar Permisos de Escritorio Remoto:
 entrar con azure admin >Boton de Inicio > Computer Managment > Enter
 en panel izquierdo > System Tools > Local Users and Groups > click en carpeta Groups
-en pane central > buscar grupo y doble click en Remote Desktop Users
+en panel central > buscar grupo y doble click en Remote Desktop Users
 > Add… > Logueo con azureadmin > Locations > Seleccionar Dominio >Cibertec.local.v2 >
 OK
 > scamargo > check Names > OK
