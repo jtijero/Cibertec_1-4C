@@ -32,7 +32,7 @@ S1(config)#exit
 S1#
 %SYS...
 
-S1# copy running-onfig startup-config   <<<
+S1# copy running-onfig startup-config   <<< copiar la configuración en ejecucion
 Destination file name [startup-config]?
 Building configuration…
 [OK]
