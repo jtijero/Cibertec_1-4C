@@ -1,0 +1,50 @@
+ver en wind OS
+Control Panel > Network Sharing Center > Change adapter settings > elegir > Ethernet > click derecho > Properties
+> Local Area Connection Porperties
+> Internet Protocol Versión 4 (TCP/IPv4) > Properties
+
+Se podrá ver info de dirección IPv4 y la mascara de subred, y Gateway predeterminado
+
+La dirección del servidor DNS es la dirección IPv4 del servidor del sistema de nombres de dominio (DNS), que se utiliza para traducir direcciones IP a direcciones web
+
+ipconfig obvio
+
+"asigne una dirección IPv4 mediante el comando ip address ip-address subnet-mask de la configuración de interfaz"
+
+Sw#config t
+Sw(config)# interface vlan 1
+Sw(config-if)# ip address 192.168.1.20 255.255.255.0
+Sw(config-if)# no shutdow
+Sw(config-if)# exit
+Sw(config)# ip default-Gateway 192.168.1.1
+
+2.8
+
+el clásico
+poner cable consola de PC A a sw> terminal> 
+> enable
+> show ip interface brief
+se ve vlan > 192.168.1.2 > administratively down > está en un estado apagado > protocolo de linea > down también
+
+entonces::
+SW# config terminal
+# interface vlan 1
+# no shutdown
+exit
+SW# show ip interface brief
+
+dira ahora "up"		
+
+AHORA CON EL SWITCH 2
+
+le falta ip al hacer el show ip interface brief
+:.
+> enable
+# config terminal
+#interface vlan 1
+# ip address 192.168.1.3 255.255.255.0
+# no shutdown
+ENTER
+CTRL +C
+# show ip interface brief
+y esta con ip y up"
