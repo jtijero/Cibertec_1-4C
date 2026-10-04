@@ -1,0 +1,40 @@
+3 componentes de la sincronización de mensajes:
+control de flujo > proceso de gestión de la velocidad de transmisión de datos
+Tiempo de espera de respuesta (response timeout)
+Método de acceso: determina en qué momento alguien puede enviar un mensaje
+
+unidifusion> un unico receptor
+multidifusion> uno a varios endpoints algunos receptores
+transmisión (broadcast) > todos receptores
+
+encapsulamiento> sobre 
+proceso convertir información en la forma adecuada para la transmision> codificación
+Identificar correctamente la dirección del remitente y del destinatario > formateo
+
+Protocolos de seguridad de red > Secure Shell SSH, Secure Sockets Layer SSL, Capa de transporte Security TLS
+
+Protocolos de routing > abrir ruta mas corta OSPF, protocolo de puerta de Enlace de Borde BGP
+
+Protocolo de Detección de servicios Dynamic Host Protocolo de configuración DHCP, Sistema de Nombres de Dominio DNS
+
+Direccionamiento> identifica remitente y destinatario previsto del mensaje
+
+COnfiabilidad > función que proporciona mecanismos de entrega garantizados en caso de mensajes que se pierden o se corrompen en transito
+
+Secuenciación > esta función etiqueta de fomra única cada segmento de datos transmitido, la utiliza la información de Secuenciación para volver a ensamblar la información correctamente
+
+Detección de errores
+
+Interfaz de la aplicacion> contiene información utilizada para proceso a proceso comunicaciones entre aplicaciones de red
+por ejmeplo acceso a web http
+
+
+PROTOCOLOS
+de transferencia de hipertexto, HTTP: este protocolo de aplicación rige la manera en que interactúan un servidor web y un cliente web, HTTP define el contenido y el formato de las solicitudes y respuestas intercambiadas entre cl y servidor
+
+de control de transmision, TCP: administra las conversaciones individuales. Se encarga de garantizar la entrega fiable de la información y de gestionar el control de flujo ente los endpoints
+
+de Internet, IP: es responsable de entregar los mensajes del remitente al receptor, es utlizado por los enrutadores para reenviar los mensajes a través de varias redes
+
+Ethernet : es responsable de la entrega de mensajes de una NIC a otra NIC en la misma red de área local LAN Ethernet
+
