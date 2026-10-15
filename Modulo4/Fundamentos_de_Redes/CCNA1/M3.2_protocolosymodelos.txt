@@ -38,3 +38,69 @@ de Internet, IP: es responsable de entregar los mensajes del remitente al recept
 
 Ethernet : es responsable de la entrega de mensajes de una NIC a otra NIC en la misma red de área local LAN Ethernet
 
+SUITES
+el modelo de referencia OSI categoriza las funciones de sus protocolos > modelo de capas, los protocolos OSI han sido reemplazados en gran medida por TCP/IP
+
+Internet Protocol Suite o TCP/IP: este es el conjunto de protocolos mas común y relevante que se utiliza hoy en dia. El conjutno de protoclos TCP/IP es un conjunto de protocolos estándar abierto mantenido por Internet Engineering Tak Force IETF
+
+NO SON TCP/IP
+Capa de acceso de red: 
+Protocolo de resolución de Dirección > ARP
+Protocolos de enlace de datos > Ethernet WLAN
+
+NAT> traducción de direcciones de red 
+
+Ethernet  > IP > TCP > Datos
+		Segmento TCP
+	    Paquete IP
+Trama de Ethernet
+
+
+protocolo estándar 802.3 Ethernet > 802.11 LAN inalámbrica
+
+
+ISOC > respondable de promover el desarrollo, la evolución y el uso abierto de Internet en todo el mundo
+IAB > responsable de la administración y el desarrollo general de los estándares de internet
+
+IEFT > desarrolla actualiza y mantiene las tecnologías de internet y de TCP/IP, esto incluye el proceso y documentación para el desarrollo de nuevos protocolos y la actualización de los protocolos existentes, conocidos como documentos de petición de comentario RFC
+
+IRTF > enfocado en investigación a largo plazo en relación con los protocolos de internet y TCO/IP como los grupos ASRG, CFRG, P2PRG
+
+
+Organizaciones de estándares involucradas en el desarrollo y soporte de TCP/IP e incluyen IANA e ICANN
+
+ICANN > con base en USA, coordina la asignación de direcciones IP, la administración de nombres de dominio y asignación de otra infor utilizada por los protocolos TCP/IP
+IANA > responsable de supervidar y administrar la asignación de direcciones IP, la administración de nombres de dominio y los identificadores de protocolo para ICANN
+
+Organización de estándares para comunicaciones y electrónica 
+I triple E, EIA cableado electronico, TIA ( telefonía acuerdate) UIT-T IPTV DSL
+
+Modelos de referencia son las capas OSI y las tCP
+
+Aplicación > la capa contine protocolos utilizados para comunicaciones proceso a proceso, de comunicaciones
+
+Presentación > la capa de presentación proporciona una representación común de los datos transferido entre los servicios de capa de aplicación
+
+Sesión > Proporciona servicios a la capa de presentación para organizar el dialogo y administrar el intercambio de datos
+
+Transporte > define servicios para segmentar, transferir y volver a montar los datos para las comunicaciones individuales entre el final
+
+Red > proporciona servicios para intercambiar las piezas individuales a través de la red entre los endpoints identificados
+
+enlace > los protocolos de la cpa de enlace de datos describen métodos para intercambiar datos, tramas entre dispositivos a través de un medio común
+
+física > describen los componentes mecánicos, eléctricos, funcionales y de procedimiento para activar, mantener y desactivar conexiones físicas para una transmisión de bits hacia y desde una red
+
+
+TCP/IP
+Aplicación >> representa datos para el usuario mas el control de codificación y de dialogo
+transporte >> admite la comunciacion entre distintos dispositivos a traves de diversas redes
+Internet >> determina el mejor camino a través de una red
+Acceso a la red >> controla los dispositivos del hardware y los medios que forman la red
+
+
+LAS DEFINICIONES DEL ESTANDAR Y LOS PROTOCOLOS TCP/IP SE EXPLICAN EN UN FORO PUBLICO Y SE DEFINEN EN UN CONJUNTO DE DOCUMENTOS DE PETICION DE COMENTARIOS RFC DISPONIBLES AL PUBLICO. UN RFC ES CREADO POR INGENIEROS DE REDES Y ENVIADO A OTROS MIEMBROS DE IETF PARA COMENTARIOS
+
+
+
+
